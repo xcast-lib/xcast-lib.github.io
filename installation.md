@@ -14,7 +14,7 @@ permalink: /installation
 
 ## Installing XCast
 
-XCast is distributed on Anaconda.org and is installed with the ```conda``` package manager. It is distributed as-is on the [hallkjc01](https://anaconda.org/hallkjc01) conda channel. 
+XCast is distributed on [Anaconda](https://www.anaconda.com/products/distribution) and through the [```conda```](https://docs.conda.io/en/latest/) package manager. It is distributed as-is on the [hallkjc01](https://anaconda.org/hallkjc01) conda channel. 
 
 You can use this command to install XCast into any compatible anaconda environment: 
 
