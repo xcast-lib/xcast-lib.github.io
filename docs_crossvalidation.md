@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Documentation: Cross-Validation
+title: Docs: Cross-Validation
 permalink: /crossvalidation/ 
 ---
 
-# Documentation: Cross-Validation
+# Docs: Cross-Validation
 K-Fold crossvalidation is a common way of validating data science methodologies. In XCast, we have implemented a Leave-N-Samples-Out crossvalidator which allows you to split your training data into ```xtrain```, ```ytrain```, ```xtest```, and ```ytest``` by simply passing your full datasets to the ```xc.CrossValidator``` iterator class. the Crossvalidator accepts dimension name keywords. 
 
 ```
