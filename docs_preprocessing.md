@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Docs: Preprocessing
+title: Documentation: Preprocessing
 permalink: /preprocessing/
 ---
 
-# Data Preprocessing in XCast
+# Documentation: Preprocessing
 
 XCast implements a diverse array of data preprocessing methodologies including regridding, smoothing, rescaling, one-hot encoding, and dimensionality reduction. 
 
@@ -95,7 +95,6 @@ fa = xc.FactorAnalysis(n_components=3)
 fa.fit(test_data) 
 test_data_transformed = fa.transform(test_data) 
 test_data_detransformed = fa.inverse_transform(test_data_transformed)
-
 
 # Dictionary Learning
 dl = xc.DictionaryLearning(n_components=3) 
