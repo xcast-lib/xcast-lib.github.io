@@ -4,7 +4,7 @@ title: Installing XCast
 permalink: /installation
 ---
 
-## Installing XCast
+# Installing XCast
 
 XCast is distributed on [Anaconda](https://www.anaconda.com/products/distribution) and through the [```conda```](https://docs.conda.io/en/latest/) package manager. It is distributed as-is on the [hallkjc01](https://anaconda.org/hallkjc01) conda channel. 
 
