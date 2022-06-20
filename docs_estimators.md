@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Documentation: Estimators
+title: Docs: Estimators
 permalink: /estimators/
 ---
 
-# Documentation: XCast Estimators 
+# Docs: XCast Estimators 
 
 XCast estimators are objects which represent gridpoint-wise local statistical and machine learning models. Similar to those of Scikit-Learn, they implement ```.fit``` and ```.predict``` methods. (also ```.predict_proba```). Generally, their methods all accept dimension name keyword arguments to accomodate different data arrays.
 Keyword arguments passed to the constructor of an XCast estimator are forwarded to the underlying 2D estimator object which is wrapped. So if I wanted to make an sklearn.neural_network.MLPRegressor with hidden_layer_sizes=(100,100), I would simply pass hidden_layer_sizes=(100, 100) to XCast, and it would be forwarded automatically. 
