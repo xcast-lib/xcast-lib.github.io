@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Documentation: Preprocessing
+title: Docs: Preprocessing
 permalink: /preprocessing/
 ---
 
-# Documentation: Preprocessing
+# Docs: Preprocessing
 
 XCast implements a diverse array of data preprocessing methodologies including regridding, smoothing, rescaling, one-hot encoding, and dimensionality reduction. 
 
