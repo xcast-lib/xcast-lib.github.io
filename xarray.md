@@ -74,6 +74,19 @@ predictor = ds.precipitation
 regional_mean = predictor.sel(X=slice(10, 20), Y=slice(10, 20)).mean('X').mean('Y') 
 ``` 
 
+### Renaming Dimensions
+
+Any Xarray dimension / coordinate can be renamed by passing a dictionary mapping ```current_names``` to ```desired_names``: 
+
+```
+import xarray as xr 
+ds = xr.open_dataset('test_data.nc') 
+predictor = ds.precipitation
+predictor_renamed = predictor.rename({'latitude1': 'new_latitude', 'longitude1': 'new_longitude'}) 
+```
+
+
+
 Xarray's full documentation is available at [https://docs.xarray.dev/en/stable](https://docs.xarray.dev/en/stable) - check it out! 
 
 
