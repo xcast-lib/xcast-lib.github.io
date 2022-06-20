@@ -9,7 +9,7 @@ permalink: /
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 ![installs](https://img.shields.io/conda/dn/hallkjc01/xcast?color=light-green&label=Installations&style=for-the-badge)
-[![DOI](https://zenodo.org/badge/386326352.svg)](https://zenodo.org/badge/latestdoi/386326352)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.6472890-blue?style=for-the-badge)](https://zenodo.org/badge/latestdoi/386326352)
 
 
 
