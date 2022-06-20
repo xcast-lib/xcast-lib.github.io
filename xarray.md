@@ -76,7 +76,7 @@ regional_mean = predictor.sel(X=slice(10, 20), Y=slice(10, 20)).mean('X').mean('
 
 ### Renaming Dimensions
 
-Any Xarray dimension / coordinate can be renamed by passing a dictionary mapping ```current_names``` to ```desired_names``: 
+Any Xarray dimension / coordinate can be renamed by passing a dictionary mapping ```current_names``` to ```desired_names```: 
 
 ```
 import xarray as xr 
