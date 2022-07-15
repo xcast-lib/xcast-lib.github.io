@@ -11,7 +11,7 @@ K-Fold crossvalidation is a common way of validating data science methodologies.
 import xarray as xr 
 import xcast as xc 
 
-nmme, india, T = xc.NMME_IMD_ISMR() # load test data 
+nmme, india, T = xc.load_sample_data() # load test data 
 
 poelm_xval = [] # place to put cross-validated predictions, to reassemble hindcast dataset 
 crossvalidation_window = 5 # number of samples to leave out 
