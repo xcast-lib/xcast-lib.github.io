@@ -15,7 +15,7 @@ Generally, the names of regressors are preceded by the letter 'r', and the names
 
 ```
 import xcast as xc 
-X, Y, T = xc.NMME_IMD_ISMR() # load test data 
+X, Y, T = xc.load_sample_data() # load test data 
 
 em = xc.EnsembleMean()
 em.fit(X, Y)
