@@ -4,6 +4,7 @@ title: Visualizations: ROC
 permalink: /view_roc/
 ---
 
+# view_roc [(source)](https://github.com/kjhall01/xcast/blob/b1764eaa1bfaf17c85447f6571caf016a13b2915/src/core/visualization.py#L76)
 
 This function plots the receiver operating characteristics curves of a probabilistic forecast dataset. It will plot one curve for each feature on the feature dimension- whether that’s tercile probabilities, or probabilities of exceedance. Note that the observations passed as the second positional argument, Y, must have the same number of features along the feature dimension as the first positional argument, X. That is to say, Y must be the binarized/one-hot encoded target data you used for fitting. 
 
@@ -19,22 +20,21 @@ A completely random classifier, with large enough sample sizes, would yield a st
 
 This function will aggregate all of the spatial points within a dataset to produce curves for a general area. You can mask out areas, or select certain geographical subregions by using the xarray .sel and .isel methods.  
 
-Returns: 
+### Returns: 
 - None
 
-
-Arguments: 
+### Arguments: 
 - X: an xarray data array following the XCast dimensionality conventions
 - Y: an xarray data array following the XCast dimensionality conventions
 	
-guess_coords kwargs:
--	x_lat_dim (default: None): the name of the latitude dimension on X
--	x_lon_dim (default: None): the name of the longitude dimension on X
--	x_feature_dim (default: None): the name of the feature dimension on X
--	x_sample_dim (default: None): the name of the sample dimension on X
--	y_lat_dim (default: None): the name of the latitude dimension on Y
--	y_lon_dim (default: None): the name of the longitude dimension on Y
--	y_feature_dim (default: None): the name of the feature dimension on Y
--	y_sample_dim (default: None): the name of the sample dimension on Y
+### guess_coords kwargs:
+- x_lat_dim (default: None): the name of the latitude dimension on X
+- x_lon_dim (default: None): the name of the longitude dimension on X
+- x_feature_dim (default: None): the name of the feature dimension on X
+- x_sample_dim (default: None): the name of the sample dimension on X
+- y_lat_dim (default: None): the name of the latitude dimension on Y
+- y_lon_dim (default: None): the name of the longitude dimension on Y
+- y_feature_dim (default: None): the name of the feature dimension on Y
+- y_sample_dim (default: None): the name of the sample dimension on Y
 
 [source code](https://github.com/kjhall01/xcast/blob/b1764eaa1bfaf17c85447f6571caf016a13b2915/src/core/visualization.py#L76)
