@@ -4,6 +4,10 @@ title: Utilities: align_chunks
 permalink: /align_chunks/
 ---
 
+# Utilities: align_chunks
+
+### xc.align_chunks ([source code](https://github.com/kjhall01/xcast/blob/b1764eaa1bfaf17c85447f6571caf016a13b2915/src/core/chunking.py#L4)) 
+
 this function modifies the latitude/longitude chunking scheme of two xarray dataarrays, such that the geographical regions represented  by each chunk in either array are consistent between them. The geographical boundaries of each data array should be consistent to start with, since xcast operates based on indices, not on coordinates. (I.e., XCast does not look at the latitude / longitude coordinates of the data it’s been given - it just checks that there are the same number of points in each one) This will, however, enable you to do tricky teleconnection-based forecasting if you can set up the data arrays correctly. 
 
 
@@ -34,4 +38,3 @@ guess_coords kwargs:
 -	y_feature_dim (default: None): the name of the feature dimension on Y
 -	y_sample_dim (default: None): the name of the sample dimension on Y
 
-[source code](https://github.com/kjhall01/xcast/blob/b1764eaa1bfaf17c85447f6571caf016a13b2915/src/core/chunking.py#L4)
