@@ -8,22 +8,17 @@ permalink: /installation
 
 XCast is distributed on [Anaconda](https://www.anaconda.com/products/distribution) and through the [```conda```](https://docs.conda.io/en/latest/) package manager. It is distributed as-is on the [hallkjc01](https://anaconda.org/hallkjc01) conda channel. 
 
-You can use this command to install XCast (the latest version is 0.5.7) into any compatible anaconda environment: 
-
-```
-conda install -c conda-forge -c hallkjc01 xcast=0.5.7
-```
-
 However, we recommend using this sequence of commands to set up a jupyter notebook kernel for XCast work:
 
 ```
-conda create -c conda-forge -c hallkjc01 -n xcast_env xcast=0.5.7 xarray cptdl netcdf4 matplotlib cartopy jupyter ipykernel 
+conda create -c conda-forge -c hallkjc01 -n xcast_env xcast xarray netcdf4 matplotlib cartopy jupyter ipykernel 
 conda activate xcast_env
 python -m ipykernel install --user --name=xcast_env
 ```
 
 You'll then be able to run jupyter notebooks under the ```xcast_env``` kernel, and have access to xcast. 
 
+You can also do whatever you want! It's an Anaconda library- so you can install it , remove it, whatever! Have a blast!
 
 [contributors-shield]: https://img.shields.io/github/contributors/kjhall01/xcast.svg?style=for-the-badge
 [contributors-url]: https://github.com/kjhall01/xcast/graphs/contributors
