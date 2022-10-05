@@ -4,7 +4,9 @@ title: Visualizations: ROC
 permalink: /view_roc/
 ---
 
-# view_roc [(source)](https://github.com/kjhall01/xcast/blob/b1764eaa1bfaf17c85447f6571caf016a13b2915/src/core/visualization.py#L76)
+# Visualizations: ROC 
+
+### xc.view_roc(..) [(source)](https://github.com/kjhall01/xcast/blob/b1764eaa1bfaf17c85447f6571caf016a13b2915/src/core/visualization.py#L76)
 
 This function plots the receiver operating characteristics curves of a probabilistic forecast dataset. It will plot one curve for each feature on the feature dimension- whether that’s tercile probabilities, or probabilities of exceedance. Note that the observations passed as the second positional argument, Y, must have the same number of features along the feature dimension as the first positional argument, X. That is to say, Y must be the binarized/one-hot encoded target data you used for fitting. 
 
