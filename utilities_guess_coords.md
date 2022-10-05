@@ -4,6 +4,9 @@ title: Utilities: guess_coords
 permalink: /guess_coords/
 ---
 
+# Utilities: guess_coords
+
+### xc.guess_coords( ... )  ([source code](https://github.com/kjhall01/xcast/blob/b1764eaa1bfaf17c85447f6571caf016a13b2915/src/core/utilities.py#L11))
 
 This function is used internally to automatically determine which dimension on an xarray data array corresponds to which dimension within the xcast dimensionality convention. It allows xcast to accommodate data from any source, and gives the user the option to provide a mapping from xcast’s naming conventions to their data array’s.
 
@@ -39,4 +42,3 @@ Keyword Arguments:
 -	x_feature_dim (default: None): the name of the feature dimension on X
 -	x_sample_dim (default: None): the name of the sample dimension on X
 
-[source code](https://github.com/kjhall01/xcast/blob/b1764eaa1bfaf17c85447f6571caf016a13b2915/src/core/utilities.py#L11)
