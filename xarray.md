@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Xarray Resources
+title: 4. Xarray Resources
 permalink: /xarray/ 
 ---
 
