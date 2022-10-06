@@ -5,8 +5,7 @@ permalink: /view_taylor/
 ---
 
 # Visualizations: Taylor Diagram
-### xc.view_taylor ([source code](https://github.com/kjhall01/xcast/blob/b1764eaa1bfaf17c85447f6571caf016a13b2915/src/core/visualization.py#L190
-)) 
+### xc.view_taylor ([source code](https://github.com/kjhall01/xcast/blob/b1764eaa1bfaf17c85447f6571caf016a13b2915/src/core/visualization.py#L190)) 
 
 this function plots a “Taylor Diagram” representing the contents of the provided X and Y datasets. A taylor diagram shows the level of consistency of several variables in comparison to a single baseline variable by plotting the RMSE between each variable and the baseline, the standard deviations of each, and the level of correlation between each variable and the baseline. 
 
