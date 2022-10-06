@@ -34,6 +34,8 @@ Our goal is to lower the barriers to entry to Earth Science (and, specifically, 
 XCast also lets you scale your gridpoint-wise earth science machine learning approaches to institutional supercomputers and computer clusters with ease. Its compatibility with Dask-Distributed's client schedulers make scalability a non-issue. It is our hope that XCast will serve to bridge the gap between traditional Python data science utilities and Python's robust geospatial data ecosystem! 
 
 
+**For a lot more information, please check out the [xcast paper](https://www.frontiersin.org/articles/10.3389/fclim.2022.953262/full) in Frontiers in Climate!**
+
 
 [contributors-shield]: https://img.shields.io/github/contributors/kjhall01/xcast.svg?style=for-the-badge
 [contributors-url]: https://github.com/kjhall01/xcast/graphs/contributors
