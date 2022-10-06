@@ -1,6 +1,6 @@
 ---
 layout: page 
-title: Installing XCast 
+title: 2. Installing XCast 
 permalink: /installation
 ---
 
