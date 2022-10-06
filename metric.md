@@ -1,10 +1,10 @@
 ---
 layout: page 
-title: Metrics: Metric 
+title: Skill Metrics in XCast
 permalink: /metric/ 
 ---
 
-# Metrics: Metric 
+# Metric Decorator
 ### xc.metric ([source code](https://github.com/kjhall01/xcast/blob/b1764eaa1bfaf17c85447f6571caf016a13b2915/src/verification/base_verification.py#L65)) 
 
 After BaseEstimator, metric is probably the second most important thing in XCast. It is the driver behind all of XCast’s skill metrics, similar to how BaseEstimator is the driver behind all of XCast’s estimators. 
@@ -33,3 +33,6 @@ Any function decorated with @metric will use the following set of args, kwargs, 
 
 **returns**
 - ret: an xarray dataarray which contains the skill score calculated by the underlying function .
+
+
+XCast has a TON of skill metrics. please refer to [this document](https://github.com/xcast-lib/xcast-lib.github.io/blob/2af918a65059510f948c8bb96ff0405bf33b373f/xcast_metrics.pdf) for more information! 
