@@ -1,6 +1,6 @@
 ---
 layout: page 
-title: Examples
+title: 3. Examples
 permalink: /examples/ 
 ---
 
