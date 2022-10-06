@@ -1,10 +1,10 @@
 ---
 layout: page 
 title: Usage Examples
-permaling: /examples/ 
+permalink: /examples/ 
 ---
 
-# Usage Examples
+# Examples
 
 - **[Basic Tutorial](https://github.com/kjhall01/xcast/blob/b1764eaa1bfaf17c85447f6571caf016a13b2915/notebooks/Tutorial/xcast_demo.ipynb)** (from Thomas Martin @ NCAR) 
 - **[Fit-Predict Walkthrough](https://github.com/kjhall01/xcast/blob/b1764eaa1bfaf17c85447f6571caf016a13b2915/notebooks/Tutorial/Fit-Predict-Example.ipynb)**
