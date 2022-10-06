@@ -5,8 +5,7 @@ permalink: /reliability_diagram/
 ---
 # Visualizations: Reliability Diagram
 
-### xc.reliability_diagram ([source code](https://github.com/kjhall01/xcast/blob/b1764eaa1bfaf17c85447f6571caf016a13b2915/src/core/visualization.py#L146
-) )
+### xc.reliability_diagram ([source code](https://github.com/kjhall01/xcast/blob/b1764eaa1bfaf17c85447f6571caf016a13b2915/src/core/visualization.py#L146))
 
 This function plots the reliability diagram of a given tercile probabilistic forecast dataset. It operates on NumPy Arrays, not xarray data arrays and therefore the user needs to extract and reshape the predictions and one-hot encoded data from xarray to numpy before passing them to reliability_diagram. 
  
