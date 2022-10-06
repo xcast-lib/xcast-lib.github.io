@@ -1,6 +1,6 @@
 ---
 layout: page
-title: XCast Citation
+title: 5. Citing XCast
 permalink: /xcast_citing/
 ---
 
