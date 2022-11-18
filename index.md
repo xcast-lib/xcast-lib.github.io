@@ -18,7 +18,7 @@ permalink: /
 <br />
 <p align="center">
   <a href="https://github.com/kjhall01/xcast/">
-    <h1 align="center"><img src="https://raw.githubusercontent.com/kjhall01/xcast/gh-pages/XCastLogo.png" align="center" alt="Logo" width="60" height="60">  XCAST</h1>
+    <h1 align="center"><img src="https://raw.githubusercontent.com/kjhall01/xcast/gh-pages/XCastLogo.png" align="center" alt="Logo" width="60" height="60">  XCast</h1>
   </a>
   <p align="center" fontsize=6> Kyle Hall & Nachiketa Acharya </p>
 
