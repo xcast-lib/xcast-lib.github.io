@@ -25,6 +25,8 @@ permalink: /
 </p>
 
 
+## Please Be Patient While Our Website Undergoes Maintenance
+
 ## Welcome to XCast
 
 XCast is a High-Performance Geospatial Data Science toolkit for the Earth Sciences. It allows one to perform gridpoint-wise statistical and machine learning analyses in an efficient way using [Dask Parallelism](https://dask.org/), through an API that closely mirrors that of [SciKit-Learn](https://scikit-learn.org/stable/), with the exception that XCast produces and consumes Xarray DataArrays, rather than two-dimensional NumPy arrays. 
