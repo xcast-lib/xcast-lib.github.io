@@ -16,5 +16,5 @@ conda activate xcast_env
 python -m ipykernel install --user --name=xcast_env
 ```
 
-You'll then be able to run jupyter notebooks under the ```xcast_env``` kernel, and have access to xcast. 
+You'll then be able to run jupyter notebooks under the ```xcast_env``` kernel, and have access to xcast. If you encounter any issues, please raise an issue on XCast's Issues page on github.
 
