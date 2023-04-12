@@ -1,6 +1,6 @@
 ---
 layout: page 
-title: 1. About 
+title: About 
 permalink: /
 ---
 
@@ -20,23 +20,20 @@ permalink: /
   <a href="https://github.com/kjhall01/xcast/">
     <h1 align="center"><img src="https://raw.githubusercontent.com/kjhall01/xcast/gh-pages/XCastLogo.png" align="center" alt="Logo" width="60" height="60">  XCast</h1>
   </a>
-  <p align="center" fontsize=6> Kyle Hall & Nachiketa Acharya </p>
-
 </p>
 
 
 ## Please Be Patient While Our Website Undergoes Maintenance
 
-## Welcome to XCast
+## Welcome
 
-XCast is a High-Performance Geospatial Data Science toolkit for the Earth Sciences. It allows one to perform gridpoint-wise statistical and machine learning analyses in an efficient way using [Dask Parallelism](https://dask.org/), through an API that closely mirrors that of [SciKit-Learn](https://scikit-learn.org/stable/), with the exception that XCast produces and consumes Xarray DataArrays, rather than two-dimensional NumPy arrays. 
+XCast is a Python Climate Forecasting toolkit - a set of flexible functions and classes that let you implement any forecasting workflow you can think of. It uses [Xarray](https://xarray.dev/) and [Dask Parallelism](https://dask.org/) to apply statistical and machine learning methods to any kind of gridded climate data quickly and efficiently.
 
-Our goal is to lower the barriers to entry to Earth Science (and, specifically, climate forecasting) by bridging the gap between Python's Gridded Data utilities (Xarray, NetCDF4, etc) and its Data Science utilities (Scikit-Learn, Scipy, OpenCV), which are normally incompatible. Through XCast, you can use all your favorite estimators, skill metrics, etc with NetCDF, Grib2, Zarr, and other types of gridded data. 
+Our goal is to lower the barriers to entry to innovation in climate and weather forecasting by bridging the gap between Python's gridded data utilities (Xarray, NetCDF4, etc) and its data science utilities (Scikit-Learn, Scipy, OpenCV). While XCast focuses on newer experimental techniques like quantile regression forest and extreme learning machine, it also implements many industry standard preprocessing methods and forecasting techniques from ensemble averaging to extended logistic regression. If there's something you feel is missing from XCast, have no fear- XCast is designed to be easily extensible (see BaseEstimator and @metric).
 
-XCast also lets you scale your gridpoint-wise earth science machine learning approaches to institutional supercomputers and computer clusters with ease. Its compatibility with Dask-Distributed's client schedulers make scalability a non-issue. It is our hope that XCast will serve to bridge the gap between traditional Python data science utilities and Python's robust geospatial data ecosystem! 
+Through dask, XCast is fully compatible with many job schedulers and workload management systems. It lets you scale your machine learning-based forecasting methods to servers and institutional supercomputer clusters with ease.
 
-
-**For a lot more information, please check out the [xcast paper](https://www.frontiersin.org/articles/10.3389/fclim.2022.953262/full) in Frontiers in Climate!**
+*For more information, please check out the [xcast whitepaper](https://www.frontiersin.org/articles/10.3389/fclim.2022.953262/full)*
 
 
 [contributors-shield]: https://img.shields.io/github/contributors/kjhall01/xcast.svg?style=for-the-badge
