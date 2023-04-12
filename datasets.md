@@ -1,50 +1,39 @@
 ---
 layout: page
-title: Datasets in XCast
-permalink: /datasets/
+title: Data in XCast
+permalink: /data/
 ---
 
-# Datasets in XCast 
+# Data Objects
 
-XCast is designed to use four-dimensional datasets - latitude, longitude, samples, and features. While these are the terms we use to discuss each of these dimensions, and differentiate them, their meanings are flexible. 
+XCast class methods and functions largely only accepts four-dimensional xarray.DataArrays. These four dimensions generally should correspond to
+1. latitude, or another spatial dimensions across which gridpoint-wise operations will be mapped
+2. longitude, or a second spatial dimensions across which gridpoint-wise operations will be mapped
+3. samples - whether distinct years, initializations, or another delineation of the separate samples seen by statistical techniques
+4. features - distinct independent variables, as understood by statistical techniques. 
 
-Latitude and longitude are the dimensions across which data will be chunked and parallelized - usually this represents lat/lon or space otherwise, but it can also be used to represent any other dimension across which 'pointwise' operations should be mapped. You could do, for examples, latitude x altitude, longitude x geopotential height, etc. 
+Please note the distinction between xarray.DataArray and xarray.DataSet - the two classes have significantly different data models and APIs, and XCast will not accept xarray.DataSets. This means you'll need to extract the data variable you want to work with from an xarray.DataSet before passing it to XCast. 
 
-The sample dimension is used to represent the distinct training samples used to fit each model. Usually, at least in seasonal forecasting, this is one sample per year. It can represent other things, like weeks or other units of time, but the user should think about what makes sense to do. 
+# Dimension & Coordinate Naming
 
-The feature dimension is the dimension which represents the distinct predictors passed to the model during fitting. 
-
-Every training dataarray needs to have 4 dimensions - even continuous predictand dataarrays, which intuitively would have 3 dimensions, needs to have a fourth dimension, of size one. 
-
-
-Additionally, predictors and predictands should be the same size in latitude/longitude dimensions. Otherwise 'gridpoint-wise' operations don't make sense. XCast's regridding functionality will help with this. They should also have the same chunking scheme, which can be managed with xcast's "align_chunks" function. 
-
-```
-import xcast as xc 
-import xarray as xr 
-
-x = xr.open_dataset('test_data_x.nc').prec 
-y = xr.open_dataset('test_data_y.nc').prec 
-
-x = xc.regrid(y.coords['X'].values, y.coords['Y'].values, x) 
-x, y = xc.align_chunks(x, y, 10, 10) # number of chunks across lat/lon 
-```
-
-## Dimension & Coordinate Naming
-
-One drawback of Xarray's flexibility is that netcdf files, geotiff files, and other datasets are allowed to have different names for the same dimension. a Time dimension can be 'Time', 'T', 'Initialization', 'Target', 'Year', or anything else really - so its not possible to automatically detect which dimensions are meant to be which in every case. 
-
-XCast accomodates this by implementing smart name-guessing heuristics based on the most common sets of coordinate and dimension names in climate data. 
-In XCast, the following common dimension names (and their mixed-case versions like Lat and Lon) will be auto-detected.  
+Since netcdf files, geotiff files, and other data formats can have arbitrary dimensionality, it's not really possible to automatically detect which dimensions are meant to represent each of the four dimensions we intend for XCast to see, in every case. To make life easier for everyone, we have implemented a name-guessing heuristic based on the most common sets of coordinate and dimension names in climate science. 
 
 ```
-common_x = ['LONGITUDE', 'LONG', 'X', 'LON']
-common_y = ['LATITUDE', 'LAT', 'LATI', 'Y']
-common_t = ['T', 'S', 'TIME', 'SAMPLES', 'SAMPLE', 'INITIALIZATION', 'INIT', "TARGET"]
-common_m = ['M', 'FEATURES', 'F', 'REALIZATION', 'MEMBER', 'Z', 'C', 'CAT']
+often_used = { 
+	'longitude': ['LONGITUDE', 'LONG', 'X', 'LON'],
+	'latitude': ['LATITUDE', 'LAT', 'LATI', 'Y'],
+	'sample': ['T', 'S', 'TIME', 'SAMPLES', 'SAMPLE', 'INITIALIZATION', 'INIT','D', 'DATE', "TARGET", 'YEAR', 'I', 'N'],
+	'feature': ['M', 'MODE', 'FEATURES', 'F', 'REALIZATION', 'MEMBER', 'Z', 'C', 'CAT', 'NUMBER', 'V', 'VARIABLE', 'VAR', 'P', 'LEVEL'],
+}
 ```
 
-XCast operations will fail if the names of the four XCast dimensions (lat/lon/sample/feature) cannot be auto-detected. Luckily, rather than requiring you to rename your dimensions and coordinates, XCast allows you to pass them as keyword arguments to any function or estimator. For functions and estimator methods that accept just an 'x' dataarray, you should pass ```x_lat_dim='your_latitude_coordname', x_lon_dim='your_longitude_coordname', x_sample_dim='your_sample_coordname', x_feature_dim='your_feature_coordname'```. For things that accept two data arrays, those are available, as well as ```y_lat_dim='your_latitude_coordname', y_lon_dim='your_longitude_coordname', y_sample_dim='your_sample_coordname', y_feature_dim='your_feature_coordname'``` 
+XCast operations will print warnings if the names of the four XCast dimensions cannot be uniquely determined. In this case, you can either rename your dimensions and coordinates appropriately, or pass them as keyword arguments to any function or class method. The keyword arguments are named as follows. 
+
+```x_lat_dim='your_latitude_coordname', x_lon_dim='your_longitude_coordname', x_sample_dim='your_sample_coordname', x_feature_dim='your_feature_coordname'```
+
+If you need to specify the dimension labels on a second xarray.DataArray argument, use:
+
+```y_lat_dim='your_latitude_coordname', y_lon_dim='your_longitude_coordname', y_sample_dim='your_sample_coordname', y_feature_dim='your_feature_coordname'``` 
 
 For example: 
 
@@ -56,7 +45,6 @@ x = xr.open_dataset('test_data_x.nc').prec
 y = xr.open_dataset('test_data_y.nc').prec 
 
 x = xc.regrid(y.coords['X'].values, y.coords['Y'].values, x, x_lat_dim='lat1', x_lon_dim='lon1', x_sample_dim='samples', x_feature_dim='features') 
-x, y = xc.align_chunks(x, y, 10, 10) # number of chunks across lat/lon 
 ```
 
 
