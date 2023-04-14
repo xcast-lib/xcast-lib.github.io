@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Data in XCast
+title: 3. Data in XCast
 permalink: /data/
 ---
 
