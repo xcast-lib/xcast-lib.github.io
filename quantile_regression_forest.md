@@ -8,7 +8,7 @@ permalink: /quantile_regression_forest/
 
 This class is a 2D estimator representing Quantile Regression Forest and is heavily based on the [PyQuantRF](https://github.com/jnelson18/pyquantrf/) library. This implementation implements small but important changes to improve training speed and decrease memory usage.
 
-For more detail on the QRF method, please refer to [Meinshausen, 2006](https://www.jmlr.org/papers/volume7/meinshausen06a/meinshausen06a.pdf].
+For more detail on the QRF method, please refer to [Meinshausen, 2006](https://www.jmlr.org/papers/volume7/meinshausen06a/meinshausen06a.pdf).
 
 ```
 qrf = quantile_regression_forest(**rf_kwargs)
