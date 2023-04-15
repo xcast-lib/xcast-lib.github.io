@@ -28,6 +28,11 @@ after fitting, these objects can then be used to apply minmax scaling to data th
 scaled = mm.transform(X) # this could be X1, a dataset from a different year of the same format as X. Scaled will have minimum of mm.min and maximum of mm.max
 ```
 
+additionally, the `mm` object can be used to reverse the transformation: 
+
+```
+unscaled = mm.inverse_transform(scaled) 
+```
 
 
 
