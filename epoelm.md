@@ -31,9 +31,9 @@ epoelm.fit(x, y)
 you can then make deterministic and probabilistic predictions for new data like `x` (`x1`, maybe) as follows: 
 
 ```
-deterministic_preds = elm.predict(x1)
-tercile_probabilities = elm.predict_proba(x1) 
-nonexceedance_30thpercentile = elm.predict_proba(x1, quantile=0.3) 
+deterministic_preds = epoelm.predict(x1)
+tercile_probabilities = epoelm.predict_proba(x1) 
+nonexceedance_30thpercentile = epoelm.predict_proba(x1, quantile=0.3) 
 
 ```
 
