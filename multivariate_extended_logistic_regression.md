@@ -6,7 +6,7 @@ permalink: /extended_logistic_regression/
 
 # multivariate_extended_logistic_regression
 
-This class is an estimator which implements Multivariate Extended Logistic Regression. Multivariate Extended Logistic regression fits a standard multivariate logistic regression on an augmented dataset.  For full detail on the Extended Logistic Regression method, please read [Wilks, 2009.](https://rmets.onlinelibrary.wiley.com/doi/10.1002/met.134)
+This class is a 2D estimator which implements Multivariate Extended Logistic Regression. Multivariate Extended Logistic regression fits a standard multivariate logistic regression on an augmented dataset.  For full detail on the Extended Logistic Regression method, please read [Wilks, 2009.](https://rmets.onlinelibrary.wiley.com/doi/10.1002/met.134)
 
 In a nutshell, however, MELR will take your X and Y arrays, double them, encode the output according to each samples membership in a distinct category defined by their nonexceedance of the 33rd and 67th percentiles of Y, and add an additional independent variable indicating the threshold by which the target variable is defined. Please read the paper for a full explanation.
 The difference between MELR and ELR is that ELR will fit a multivariate logistic regression (note: not extended) for each of the independent variables, **separately**, whereas MELR will fit one multivariate logistic regression for all of them at once. 
