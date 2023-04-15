@@ -21,6 +21,6 @@ anomaly = xc.remove_climatology(
 
 ```
 data = xr.open_dataset('example.nc').precipitation # pretend this is a 4D XCast-style data array with daily precipitation (mm/day) values in it
-anom = xc.remove_climatology(data)  # apply mask to the data
+anom = xc.remove_climatology(data)  # remove monthly climatology
 ```
 
