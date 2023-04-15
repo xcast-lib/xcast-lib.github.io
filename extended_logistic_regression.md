@@ -6,7 +6,7 @@ permalink: /extended_logistic_regression/
 
 # extended_logistic_regression
 
-The extended_logistic_regression class fits a univariate extended logistic regression separately between each of the predictor variables and the target variable, and then takes the average of the resulting predictions. This method is often used bias-correct individual climate models before taking their ensemble mean.
+The extended_logistic_regression class is a 2D estimator which fits a univariate extended logistic regression separately between each of the predictor variables and the target variable, and then takes the average of the resulting predictions. This method is often used bias-correct individual climate models before taking their ensemble mean.
 ```
 elr = extended_logistic_regression(
     preprocessing='minmax', # one of 'minmax' (minmax scaling), 'std' (standard anomaly scaling) or None
