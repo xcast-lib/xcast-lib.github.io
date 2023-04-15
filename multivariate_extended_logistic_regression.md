@@ -27,8 +27,8 @@ melr.fit(x, y)
 you can then make probabilistic predictions for new data like `x` (`x1`, maybe) as follows: 
 
 ```
-tercile_probabilities = elr.predict_proba(x1) 
-nonexceedance_30thpercentile = elr.predict_proba(x1, quantile=0.3) 
+tercile_probabilities = melr.predict_proba(x1) 
+nonexceedance_30thpercentile = melr.predict_proba(x1, quantile=0.3) 
 ```
 
 
