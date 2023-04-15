@@ -15,6 +15,7 @@ ohc.fit(X)
 T = ohc.transform(X) # this could be X1, a dataset from a different year of the same format as X. Scaled will have minimum of mm.min and maximum of mm.max
 ```
 
+While no XCast estimators (as of v1.0.0) require One-Hot Encoded training data, `OneHotEncoder` is still used to transform observations for the sake of comparison. Many of XCast's metrics require one-hot encoded observation data for comparison with probabilistic forecasts. 
 
 
 
