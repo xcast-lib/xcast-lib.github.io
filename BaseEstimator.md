@@ -33,5 +33,5 @@ You'll then be able to use XCElasticNet.fit, and the other sklearn.linear_model.
 | xcast.epoelm | xcast.EPOELM  | YES | YES | YES |  
 | xcast.quantile_regression_forest | xcast.QRF  | YES | YES | YES |  
 
-
+In estimators where non-exceedance forecasts are available, pass the `quantile` keyword to indicate the percentile-based non-exceedance threshold you want the non-exceedance probability of 
 
