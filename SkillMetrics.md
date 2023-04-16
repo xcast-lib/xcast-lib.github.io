@@ -49,7 +49,7 @@ def XCastRMSE(x, y):
 
 You could then use `XCastRMSE` on your `xarray.DataArray`s. 
 
-There are a set of commonly-used skill metrics already implemented in XCast- some of them for deterministic forecasts, some for probabilistic. They are detailed in the table below. 
+There are a set of commonly-used skill metrics already implemented in XCast- some of them for deterministic forecasts, some for probabilistic. They are detailed in the table below (scroll to the right for links to more information) 
 
 | 2D Function Name    | XCast Function Name    |     Intended Purpose     |    More information   |
 | ------------------- | ---------------------- | ------------------------ | --------------------- |
