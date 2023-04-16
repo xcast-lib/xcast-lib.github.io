@@ -23,7 +23,7 @@ Generally it is important to evaluate predictions and forecasts under cross-vali
 
 `LeaveOneYearOut` usualy should be used in conjunction with `RollingMinMax` to account for intraseasonal variability. 
 
-For more detailed examples of cross-validation and skill metrics with xcast, please see the the [examples](github.com/kjhall01/xcast) 
+For more detailed examples of cross-validation and skill metrics with xcast, please see the the [examples](https://github.com/kjhall01/xcast)
 
 
 
