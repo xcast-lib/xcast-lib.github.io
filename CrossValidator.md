@@ -18,7 +18,7 @@ for xtrain, ytrain, xtest, ytest in xc.CrossValidator(X, Y, window=1):
 
 Generally it is important to evaluate predictions and forecasts under cross-validation to prevent data-leakage and spurious high skill. If you compare predictions made for the samples that your model was trained on with observations (which the model was also trained on), you're going to see much higher skill than you would for samples the model hasn't seen before. Since in forecasting, we train predictive models on the available hindcast/observation pairs, and make predictions for future dates which have not been observed, we need a way of measuring how well the model generalizes to new data - cross validation. 
 
-For more detailed examples of cross-validation and skill metrics with xcast, please see the the [examples](github.com/kjhall01/xcast) 
+For more detailed examples of cross-validation and skill metrics with xcast, please see the the [examples](https://github.com/kjhall01/xcast)
 
 
 
