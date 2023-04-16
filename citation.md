@@ -5,7 +5,7 @@ permalink: /xcast_citing/
 ---
 
 # Citing XCast 
-Please cite the xcast whitepaper you have used XCast in your work 
+Please cite the xcast whitepaper if you have used XCast in your work 
 
 #### Bibtex
 ```
