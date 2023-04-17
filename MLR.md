@@ -6,7 +6,7 @@ permalink: /MLR/
 
 # MLR
 
-This class represents an estimator which performs [Multiple Linear Regression]([https://en.wikipedia.org/wiki/Principal_component_regression](https://en.wikipedia.org/wiki/Linear_regression)) using `xcast.linear_regression`. 
+This class represents an estimator which performs [Multiple Linear Regression](https://en.wikipedia.org/wiki/Linear_regression) using `xcast.linear_regression`. 
 
 As in `linear_regression`, the cross-validated error variance is used to produce predictive probability distributions under gaussian assumptions.
 
