@@ -11,7 +11,16 @@ This class represents an estimator which performs [canonical correlation analysi
 This class accepts two two-dimensional NumPy arrays, X and Y, whose first dimension represents distinct samples and whose second dimension represents distinct features (gridpoints). This is used internally by `xc.CCA` to perform CCA on two xarray.DataArrays, but you can also use it separately with NumPy arrays if you want.
 
 ```
-cca = canonical_correlation_analysis(xmodes=(1, 5), ymodes=(1, 5), ccamodes=(1,5), crossvalidation_splits=5, probability_method='error_variance', latitude_weights_x=None, latitude_weights_y=None, search_override=(None, None, None))
+cca = canonical_correlation_analysis(
+  xmodes=(1, 5), 
+  ymodes=(1, 5), 
+  ccamodes=(1,5), 
+  crossvalidation_splits=5, 
+  probability_method='error_variance', 
+  latitude_weights_x=None, 
+  latitude_weights_y=None, 
+  search_override=(None, None, None)
+)
 ```
 
 `canonical_correlation_analysis` by default performs a comprehensive search across the three-dimensional space defined by the `xmodes`, `ymodes`, and `ccamodes` arguments, where each represents the minimum and maximum number of X-PCA/Y-PCA/CCA modes to retain, respectively.
