@@ -1,7 +1,7 @@
 ---
 layout: page
-title: canonical_correlation_analysis
-permalink: /canonical_correlation_analysis/
+title: linear_regression
+permalink: /linear_regression/
 ---
 
 # linear_regression
