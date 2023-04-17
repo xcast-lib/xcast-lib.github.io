@@ -24,7 +24,7 @@ class XCElasticNet(xc.BaseEstimator):
 ``` 
 You'll then be able to use XCElasticNet.fit, and the other sklearn.linear_model.ElasticNet class methods (out of .fit, .predict, .transform, and .predict_proba) as XCast-style functions. See all of the things implemented with BaseEstimator in the table below: 
 
-| 2D estimator | XCast-Style Estimator | Deterministic Forecasts? | Tercile Probability Forecasts? | Non-Exceedance Forecasts? | 
+| 2D Estimator | XCast-Style Estimator | Deterministic Forecasts? | Tercile Probability Forecasts? | Non-Exceedance Forecasts? | 
 | ---- | --- | --- | --- | --- |
 | xcast.linear_regression | xcast.MLR |  YES | YES | YES | 
 | xcast.multivariate_extended_logistic_regression | xcast.MELR | NO | YES | YES | 
@@ -33,5 +33,16 @@ You'll then be able to use XCElasticNet.fit, and the other sklearn.linear_model.
 | xcast.epoelm | xcast.EPOELM  | YES | YES | YES |  
 | xcast.quantile_regression_forest | xcast.QRF  | YES | YES | YES |  
 
-In estimators where non-exceedance forecasts are available, pass the `quantile` keyword to indicate the percentile-based non-exceedance threshold you want the non-exceedance probability of 
+For the sake of completeness, here is a list of all of the other currently implemented XCast estimators (as of v1.0.0) that are not subclasses of BaseEstimator 
+
+| Method | XCast-Style Estimator | Deterministic Forecasts? | Tercile Probability Forecasts? | Non-Exceedance Forecasts? | 
+| ---- | --- | --- | --- | --- |
+| Ensemble Mean / Member Count | xcast.Ensemble |  YES | YES | NO | 
+| Anomaly Correlation / Probability Anomaly Correlation | xcast.ACPAC | YES | YES | NO | 
+| Canonical Correlation Analysis | xcast.CCA | YES | YES | YES | 
+| Principal Components Regression | xcast.PCR | YES | YES | YES | 
+
+NOTE: In estimators where non-exceedance forecasts are available, pass the `quantile` keyword to indicate the percentile-based non-exceedance threshold you want the non-exceedance probability of. 
+
+
 
