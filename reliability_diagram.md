@@ -6,7 +6,7 @@ permalink: /reliability_diagram/
 
 # reliability_diagram
 
-reliability_diagram calculates and plots the reliability diagram between two NumPy arrays, one of which represnets a probabilty forecast and one of which represents one-hot encoded observations for reference. 
+reliability_diagram calculates and plots the reliability diagram between two NumPy arrays, one of which represents a probabilty forecast and one of which represents one-hot encoded observations for reference. 
 
 ```
 reliability_diagram(
