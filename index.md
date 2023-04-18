@@ -31,7 +31,7 @@ Our goal is to lower the barriers to entry to innovation in climate and weather 
 
 Through dask, XCast is fully compatible with many job schedulers and workload management systems. It lets you scale your machine learning-based forecasting methods to servers and institutional supercomputer clusters with ease.
 
-*XCast v0.6.9 is now live - report issues [here](https://github.com/kjhall01/xcast/issues)
+*XCast v0.6.9 is now live - report issues [here](https://github.com/kjhall01/xcast/issues)*
 
 *For more information, please check out the [xcast whitepaper](https://www.frontiersin.org/articles/10.3389/fclim.2022.953262/full)*
 
