@@ -23,8 +23,6 @@ permalink: /
 </p>
 
 
-## Please Be Patient While Our Website Undergoes Maintenance
-
 ## Welcome
 
 XCast is a Python Climate Forecasting toolkit - a set of flexible functions and classes that let you implement any forecasting workflow you can think of. It uses [Xarray](https://xarray.dev/) and [Dask Parallelism](https://dask.org/) to apply statistical and machine learning methods to any kind of gridded climate data quickly and efficiently.
@@ -32,6 +30,8 @@ XCast is a Python Climate Forecasting toolkit - a set of flexible functions and 
 Our goal is to lower the barriers to entry to innovation in climate and weather forecasting by bridging the gap between Python's gridded data utilities (Xarray, NetCDF4, etc) and its data science utilities (Scikit-Learn, Scipy, OpenCV). While XCast focuses on newer experimental techniques like quantile regression forest and extreme learning machine, it also implements many industry standard preprocessing methods and forecasting techniques from ensemble averaging to extended logistic regression. If there's something you feel is missing from XCast, have no fear- XCast is designed to be easily extensible (see BaseEstimator and @metric).
 
 Through dask, XCast is fully compatible with many job schedulers and workload management systems. It lets you scale your machine learning-based forecasting methods to servers and institutional supercomputer clusters with ease.
+
+*XCast v0.6.9 is now live - report issues [here](https://github.com/kjhall01/xcast/issues)
 
 *For more information, please check out the [xcast whitepaper](https://www.frontiersin.org/articles/10.3389/fclim.2022.953262/full)*
 
