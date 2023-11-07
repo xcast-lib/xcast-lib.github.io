@@ -22,6 +22,7 @@ permalink: /
   </a>
 </p>
 
+by Kyle Hall and Nachiketa Acharya
 
 ## Welcome
 
