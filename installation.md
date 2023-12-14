@@ -11,7 +11,7 @@ XCast is distributed as-is on [Anaconda](https://www.anaconda.com/products/distr
 However, I recommend using this sequence of commands to set up a jupyter notebook kernel for XCast work:
 
 ```
-conda create -c conda-forge -c hallkjc01 -n xcast_env xcast xarray netcdf4 matplotlib cartopy jupyter ipykernel 
+conda create -c conda-forge -c hallkjc01 -n xcast_env xcast xarray netcdf4 matplotlib cartopy cfgrib jupyter ipykernel 
 conda activate xcast_env
 python -m ipykernel install --user --name=xcast_env
 ```
